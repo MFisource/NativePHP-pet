@@ -10,20 +10,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
 
-    <form action="register.php" method="post">
-        <input type="text" placeholder="Логин" name="login">
-        <input type="text" placeholder="Пароль" name="password">
-        <input type="text" placeholder="Повторите пароль" name="passrepeat">
-        <input type="text" placeholder="email" name="email">
-        <button type="submit">Зарегистрироваться</button>
-    </form>
+                                <!--register form-->
+                <form action="register.php" method="post">
+                    <h2 class="mb-4">Регистрация</h2>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Логин" name="login">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Пароль" name="password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Повторите пароль" name="passrepeat">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
 
-    <form action="login.php" method="post">
-        <input type="text" placeholder="Логин" name="login">
-        <input type="text" placeholder="Пароль" name="password">
-        <button type="submit">Войти</button>
-    </form>
+                                <!-- login form-->
+                <form action="login.php" method="post">
+                    <h2 class="mb-4">Вход</h2>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Логин" name="login">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Пароль" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
